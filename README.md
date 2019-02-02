@@ -1,14 +1,18 @@
 # docker-rails-postgres
 Docker Ruby On Rails Image
 
-##Pre Requisites
+## Pre Requisites
 [Reference ruby on rails docker image](https://docs.docker.com/compose/rails/)
+
 [Install docker compose](https://docs.docker.com/compose/install/)
 
-##Installation Steps
+## Installation Steps
 git clone https://github.com/rezurrector/docker-rails-postgres.git
+
 cd docker-rails-postgres.git
+
 docker-compose run web rails new . --force --no-deps --database=postgresql
+
 sudo chown -R $USER:$USER .
 docker-compose build
 
@@ -34,8 +38,10 @@ test:
 docker-compose up
 
 docker-compose run web rake db:create
+
 docker-compose down  
 
-##References
+## References
 [Rails Guides](https://guides.rubyonrails.org)
+
 [Ruby Docs](https://www.ruby-lang.org)
