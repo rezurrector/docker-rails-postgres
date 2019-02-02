@@ -1,5 +1,4 @@
-# docker-rails-postgres
-Docker Ruby On Rails Image
+# Docker Ruby On Rails Image
 
 ## Pre Requisites
 [Reference ruby on rails docker image](https://docs.docker.com/compose/rails/)
@@ -14,6 +13,7 @@ cd docker-rails-postgres.git
 docker-compose run web rails new . --force --no-deps --database=postgresql
 
 sudo chown -R $USER:$USER .
+
 docker-compose build
 
 ```yaml
