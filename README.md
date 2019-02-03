@@ -8,9 +8,9 @@
 ## Installation Steps
 git clone https://github.com/rezurrector/docker-rails-postgres.git
 
-cd docker-rails-postgres.git
+cd docker-rails-postgres
 
-docker-compose run web rails new . --force --no-deps --database=postgresql
+sudo docker-compose run web rails new . --force --no-deps --database=postgresql
 
 sudo chown -R $USER:$USER .
 
